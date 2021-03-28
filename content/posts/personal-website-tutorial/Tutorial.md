@@ -1,6 +1,6 @@
 ---
 title: "Create your own personal website or blog for free"
-date: 2020-06-08T08:06:25+06:00
+date: 2021-03-28T12:06:25+06:00
 description: How to create your own personal website
 menu:
   sidebar:
@@ -65,7 +65,7 @@ Great! Now you have Git and Hugo installed on your machine.
 
 In the same PowerShell, navigate to your home directory with the following command `cd $HOME/Documents`
 
-![powershell_home.png](powershell_home.png?fileId=323046#mimetype=image%2Fpng&hasPreview=true)
+![powershell_home.png](/posts/personal-website-tutorial/powershell_home.png)
 
 Next, we will tell Hugo to create a new site, choose a name for it, something like `personal-site`
 
@@ -73,7 +73,7 @@ Next, we will tell Hugo to create a new site, choose a name for it, something li
 
 After running this command, Hugo will create a folder with the same name and with multiple files in side, navigate to that directory with: `cd <sitename>` if you list the files inside using `ls`, it should look something like:
 
-![powershell_personal-site.png](powershell_personal-site.png?fileId=323059#mimetype=image%2Fpng&hasPreview=true)
+![powershell_personal-site.png](/posts/personal-website-tutorial/powershell_personal-site.png)
 
 Now we need to initialize this new project as a Git repository:
 
