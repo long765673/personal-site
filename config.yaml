@@ -1,4 +1,4 @@
-baseURL: http://zackhl.com
+baseURL: https://zackhl.com
 
 languageCode: en-us
 title: "Zack's Blog"
@@ -31,5 +31,3 @@ params:
 
   # specify whether you want to show Table of Contents in reading page
   enableTOC: true
-
-  #test
