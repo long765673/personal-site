@@ -1,4 +1,13 @@
-# Create your own personal website or blog for free
+---
+title: "Create your own personal website or blog for free"
+date: 2020-06-08T08:06:25+06:00
+description: How to create your own personal website
+menu:
+  sidebar:
+    name: Create your own personal website or blog for free
+    identifier: website tutorial
+    weight: 10
+---
 
 ## Introduction
 
