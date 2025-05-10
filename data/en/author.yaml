@@ -1,18 +1,19 @@
 # some information about you
-name: "Zack Bai"
+name: "Zack Bai Han Long"
 nickname: "Zack"
 # greeting message before your name. it will default to "Hi! I am" if not provided
-greeting: "Hi, I am"
-image: "images/author/john.png"
+greeting: "Hi, I'm"
+image: "images/author/john.png" # Placeholder, replace with a professional photo of Zack
 # give your some contact information. they will be used in the footer
 contactInfo:
-  email: "zackbai@example.com"
-  phone: "+0123456789"
+  email: "dragon.hl90@gmail.com"
+  phone: "+60 11 33216205"
+  linkedin: "https://www.linkedin.com/in/zack-bai-75140087"
 
-# some summary about what you do
+# A brief summary about Zack
 summary:
-  - I am a Developer
-  - I work on Tableau
-  - I work on open-source projects
-  - I love to work with some fun projects
-  - I like to play games during free time
+  - Versatile and dedicated software engineering consultant.
+  - Passionate about leveraging new technologies to solve complex challenges.
+  - Experienced in automated testing, cloud-native solutions, and AI-powered systems.
+  - Proven ability to manage tasks efficiently and communicate effectively.
+  - Ready to help you achieve your project goals with cutting-edge expertise.

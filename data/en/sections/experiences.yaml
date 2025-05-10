@@ -1,42 +1,81 @@
 # section information
 section:
-  name: Experiences
+  name: Professional Experience
   id: experiences
   enable: true
-  weight: 3
+  weight: 4 # Adjusted weight for ordering
   showOnNavbar: true
   # Can optionally hide the title in sections
-  # hideTitle: true 
+  # hideTitle: true
 
 # Your experiences
 experiences:
 - company:
-    name: Example Co.
-    url: "https://www.example.com"
-    location: Dhaka Branch
-    # company overview
-    overview: Example Co. is a widely recognized company for cloud-native development. It builds tools for Kubernetes.
-  positions:
-  - designation: Senior Software Engineer
-    start: Nov 2019
-    # don't provide end date if you are currently working there. It will be replaced by "Present"
-    # end: Dec 2020
-    # give some points about what was your responsibilities at the company.
-    responsibilities:
-    - Design and develop XYZ tool for ABC task
-    - Design, develop and manage disaster recovery tool [Xtool](https://www.example.com) that backup Kubernetes volumes, databases, and cluster's resource definition.
-    - Lead backend team.
-
-- company:
-    name: PreExample Co.
-    url: "https://www.preexample.com"
-    location: Nowhere
-    overview: PreExample Co. is a gateway company to enter into Example co. So, nothing special here.
+    name: Persistent Systems Limited
+    url: "" # Add URL if available
+    location: Remote/Hybrid
+    overview: Contributing to automated testing strategies and CI/CD pipeline maintenance.
   positions:
   - designation: Software Engineer
-    start: March 2016
-    end: May 2017
+    start: Oct 2024
+    # end: Present (implied by no end date)
     responsibilities:
-    - Write lots of example codes.
-    - Read lots of examples.
-    - See lots of example videos.
+    - Led and planned tasks for automated testing, coordinating with team members to define test strategies and ensure timely execution.
+    - Improved test coverage and efficiency by aligning testing objectives with project goals and deadlines.
+    - Designed and maintained a suite of automated tests to ensure comprehensive coverage and functionality.
+    - Configured Docker with Rancher URL and token for streamlined management; conducted deployment tests via Docker Desktop.
+    - Ran Python Behave automated tests on components.
+    - Maintained CI/CD pipelines in GitHub for multiple repositories.
+    - Applied Scrum Agile Methodology for sprint cycles.
+
+- company:
+    name: Abc Salesbot Sdn Bhd
+    url: "" # Add URL if available
+    location: Remote/Freelance
+    overview: Spearheaded automation testing for an AI-powered CRM system.
+  positions:
+  - designation: Freelance QA Developer
+    start: Oct 2024
+    # end: Present (implied by no end date)
+    responsibilities:
+    - Spearheaded automation testing for a state-of-the-art AI-powered CRM system using Golang and Playwright.
+    - Established the company’s first automated test suite, significantly enhancing testing efficiency and reliability.
+    - Conducted rigorous manual testing to ensure smooth production releases.
+    - Evaluated and implemented utilities leveraging LLM tools to accelerate the development of automated tests.
+
+- company:
+    name: Infovista Sdn Bhd
+    url: "" # Add URL if available
+    location: Malaysia
+    overview: Focused on containerization, Kubernetes orchestration, and data parsing/reporting.
+  positions:
+  - designation: Software Engineer
+    start: Oct 2013
+    end: Oct 2024
+    responsibilities:
+    - Containerized a monolithic application using Docker, transforming components into microservices.
+    - Employed Kubernetes for orchestration and Helm for efficient deployment and upgrades.
+    - Developed Tableau reporting templates for customer network issue verification.
+    - Developed and maintained network dump file parsers using C# and regular expressions.
+    - Applied Scrum Agile Methodology for sprint cycles.
+
+- company:
+    name: Aexio Software Sdn Bhd
+    url: "" # Add URL if available
+    location: Malaysia
+    overview: Initial roles focused on network dump file parsers and database maintenance.
+  positions:
+  - designation: Software Engineer
+    start: May 2013
+    end: Sep 2013
+    responsibilities:
+    - Developed and maintained network dump file parsers using C#.
+    - Maintained MSSQL database tables for new vendor network dump file versions.
+    - Reported progress to team lead/project manager.
+  - designation: Software Engineer Trainee
+    start: Jan 2013
+    end: Apr 2013
+    responsibilities:
+    - Assisted QA with manual testing and report verification.
+    - Maintained network dump file parsers using C#.
+    - Reported progress to senior software engineer.

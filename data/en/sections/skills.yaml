@@ -1,9 +1,9 @@
 # section information
 section:
-  name: Skills
+  name: Technical Skills & Tools
   id: skills
   enable: true
-  weight: 2
+  weight: 3 # Adjusted weight for ordering
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true
@@ -11,16 +11,52 @@ section:
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
-- name: Kubernetes
-  logo: "/images/sections/skills/kubernetes.png"
-  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
-  url: "https://kubernetes.io/"
+# - name: C#
+#   logo: "/images/sections/skills/csharp.png" # Placeholder - add csharp.png to assets
+#   summary: "Extensive experience in developing and maintaining applications, particularly network data parsers and backend systems."
+#   url: "https://docs.microsoft.com/en-us/dotnet/csharp/"
 
-- name: Go Development
-  logo: "/images/sections/skills/go.png"
-  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
+# - name: Python
+#   logo: "/images/sections/skills/python.png" # Placeholder - add python.png to assets
+#   summary: "Proficient in Python for automated testing (Behave), scripting, and general application development."
+#   url: "https://www.python.org/"
+
+- name: Golang
+  logo: "/images/sections/skills/go.png" # Existing image
+  summary: "Utilized Golang for developing high-performance automation testing tools for AI-powered CRM systems."
   url: "https://golang.org/"
 
-- name: Cloud Computing
-  logo: "/images/sections/skills/cloud.png"
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
+- name: Kubernetes
+  logo: "/images/sections/skills/kubernetes.png" # Existing image
+  summary: "CKAD certified. Expertise in deploying, managing, and orchestrating containerized applications using Kubernetes and Helm."
+  url: "https://kubernetes.io/"
+
+- name: Docker
+  logo: "/images/sections/skills/docker.svg" # Existing image
+  summary: "Skilled in containerizing monolithic applications into microservices for improved scalability and management."
+  url: "https://www.docker.com/"
+
+# - name: Automated Testing
+#   logo: "/images/sections/skills/automated-testing.png" # Placeholder - add automated-testing.png
+#   summary: "Specialized in designing and implementing automated test suites using Python Behave, Playwright, and other tools to ensure software quality."
+#   # url: "" # No specific URL
+
+# - name: CI/CD
+#   logo: "/images/sections/skills/cicd.png" # Placeholder - add cicd.png
+#   summary: "Experienced in maintaining CI/CD pipelines using GitHub, Azure DevOps, and GitLab for efficient software delivery."
+#   # url: ""
+
+# - name: SQL & Databases
+#   logo: "/images/sections/skills/sql.png" # Placeholder - add sql.png
+#   summary: "Proficient with MSSQL, PostgreSQL, and ClickHouse for database management and data extraction."
+#   # url: ""
+
+# - name: Tableau
+#   logo: "/images/sections/skills/tableau.png" # Placeholder - add tableau.png
+#   summary: "Developed Tableau reporting templates for data visualization and issue verification."
+#   url: "https://www.tableau.com/"
+
+# DevOps Tools: Azure DevOps, JIRA, Git, GitHub, GitLab
+# Web Technologies: HTML, CSS, JavaScript
+# Methodologies: Scrum Agile Methodology
+# These can be added similarly or mentioned in a general text area if icons are too many.

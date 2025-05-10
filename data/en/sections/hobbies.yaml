@@ -1,0 +1,21 @@
+# section information
+section:
+  name: Hobbies & Interests
+  id: hobbies
+  enable: true
+  weight: 5 # Adjusted weight to follow skills/experiences
+  showOnNavbar: true
+  template: sections/achievements.html # Using the achievements template
+
+# Hobbies list, structured for the achievements.html template
+achievements:
+- title: Bouldering
+  details: "Enjoy the process of constantly challenging myself for improvements through bouldering. It's a fantastic way to build problem-solving skills, strength, and resilience."
+- title: Badminton
+  details: "Regularly play badminton to stay active and agile. I appreciate the strategic thinking and quick reflexes the sport demands."
+- title: Online Gaming
+  details: "Passionate about gaming, which sharpens my strategic thinking, reaction time, and teamwork abilities in dynamic, competitive environments."
+- title: Food Enthusiast
+  details: "Love exploring different cuisines and trying new recipes. It's a delightful way to experience diverse cultures and express creativity."
+- title: Travelling
+  details: "Enjoy traveling to experience diverse cultures and gain new perspectives, which often inspires fresh ideas and approaches in both personal and professional life."
