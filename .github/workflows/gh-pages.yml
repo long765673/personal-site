@@ -7,24 +7,47 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest # Use the latest Ubuntu runner
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v4 # Update to v4
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4 # Add Node.js setup
+        with:
+          node-version: '20' # Specify Node.js version (LTS recommended)
+          cache: 'npm' # Cache npm dependencies
+
+      - name: Install Node.js dependencies
+        run: npm ci # Use ci for cleaner installs with package-lock.json
+
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v2 # peaceiris/actions-hugo@v2 is still a common choice
         with:
           hugo-version: 'latest'
-          # extended: true
+          extended: true # Ensure extended version is used for SCSS
 
       - name: Build
-        run: hugo --minify
+        run: hugo --minify # Build the site
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          path: ./public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
