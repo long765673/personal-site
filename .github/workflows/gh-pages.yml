@@ -34,11 +34,14 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3 # old version: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
+          version: 'latest'
           extended: true # Ensure extended version is used for SCSS
 
       - name: Build
-        run: hugo --minify # Build the site
+        run: hugo --minify --baseURL "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+      
+      - name: List public directory contents # New diagnostic step
+        run: ls -lR public
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
