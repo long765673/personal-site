@@ -38,7 +38,7 @@ jobs:
           extended: true # Ensure extended version is used for SCSS
 
       - name: Build
-        run: hugo --minify --baseURL "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+        run: hugo --minify --baseURL "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
       
       - name: List public directory contents # New diagnostic step
         run: ls -lR public
