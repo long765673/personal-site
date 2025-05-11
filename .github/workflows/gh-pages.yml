@@ -32,7 +32,7 @@ jobs:
         run: npm ci # Use ci for cleaner installs with package-lock.json
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2 # peaceiris/actions-hugo@v2 is still a common choice
+        uses: peaceiris/actions-hugo@v3 # old version: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
           extended: true # Ensure extended version is used for SCSS
